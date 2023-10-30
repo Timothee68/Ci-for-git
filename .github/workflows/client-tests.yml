@@ -5,9 +5,9 @@ on:
 
 jobs:
   test-client:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Check out code
-      uses: actions/checkout@v4
-    - name: Goto client and run tests
-      run: cd client && npm i && npm test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Goto client and run tests
+        run: cd client && npm i && npm test
